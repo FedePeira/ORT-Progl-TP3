@@ -1,0 +1,61 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>120</x><y>176</y><w>96</w><h>96</h></coordinates><panel_attributes>Empresa
+--
+
+--
++Empresa()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>328</y><w>120</w><h>96</h></coordinates><panel_attributes>Estacion
+--
+-id:int
+-descripcion:String
+--
++Estacion(int,String)
++dameHoraActual():int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>328</x><y>184</y><w>152</w><h>120</h></coordinates><panel_attributes>Cabina
+--
+_-PRIMER_HORA_PICO:int = 6_
+_-SEGUNDA_HORA_PICO:int = 10_
+_-TERCERA_HORA_PICO:int = 17_
+_-CUARTA_HORA_PICO:int = 20_
+_-INCREMENTO:int = 8_
+-numIdenti:int
+--
++Cabina(int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>344</x><y>344</y><w>120</w><h>96</h></coordinates><panel_attributes>MedioDePago
+--
+-descripcion:String
+--
++MedioDePago(String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>152</x><y>496</y><w>120</w><h>96</h></coordinates><panel_attributes>Sube
+--
+_-DESCUENTO:int = 10_
+-cantDemora:int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>336</x><y>480</y><w>152</w><h>128</h></coordinates><panel_attributes>Pase
+--
+_-DESCUENTO:int = 15_
+_-DEMORA_DIA:int = 5_
+_-DESCUENTO_DEMORA:int = 12_
+-cantDemora:int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>528</x><y>488</y><w>120</w><h>96</h></coordinates><panel_attributes>Efectivo
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>184</y><w>120</w><h>96</h></coordinates><panel_attributes>Vehiculo
+--
+-patente:String
+-horarioPasa:int
+--
++Vehiculo(String,int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>352</y><w>120</w><h>96</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Categoria
+--
++AUTO
++MOTO
++CAMION
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>176</x><y>264</y><w>72</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+-estaciones</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>232</x><y>248</y><w>112</w><h>128</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+-cabinas</panel_attributes><additional_attributes>120;10;60;10;60;140;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>408</x><y>296</y><w>88</w><h>64</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-medioDePago</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>432</y><w>208</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;30;240;30;240;70</additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>432</y><w>216</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>250;10;250;30;10;30;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>432</y><w>24</w><h>64</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>624</x><y>272</y><w>72</w><h>96</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-categoria</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>456</x><y>272</y><w>152</w><h>128</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-medioDePago</panel_attributes><additional_attributes>10;130;60;130;60;60;170;60;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>216</x><y>120</y><w>416</w><h>224</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>500;80;500;10;10;10;10;260</additional_attributes></element></diagram>

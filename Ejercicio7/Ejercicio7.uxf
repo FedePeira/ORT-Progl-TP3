@@ -1,0 +1,27 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>50</x><y>20</y><w>150</w><h>140</h></coordinates><panel_attributes>GrupoDeFiguras
+--
+
+--
++GrupoDeFiguras()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>30</y><w>150</w><h>140</h></coordinates><panel_attributes>/Figura/
+--
+_-PI:double = 3,14_
+-color:String
+--
++Figura()
+/+area():double/
+/+perimetro():double/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>70</y><w>180</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+-figuras</panel_attributes><additional_attributes>160;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>260</y><w>150</w><h>140</h></coordinates><panel_attributes>Circunferencia
+--
+-radio:double
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>260</y><w>150</w><h>140</h></coordinates><panel_attributes>TrianguloEquilatero
+--
+-lado.double
+-altura:double
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>260</y><w>150</w><h>140</h></coordinates><panel_attributes>Rectangulo
+--
+-lado:double
+-ancho:double
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>160</y><w>290</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>270;10;270;60;10;60;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>160</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>160</y><w>280</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;260;60;260;100</additional_attributes></element></diagram>

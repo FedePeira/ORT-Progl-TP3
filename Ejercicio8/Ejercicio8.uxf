@@ -1,0 +1,27 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>340</x><y>40</y><w>190</w><h>130</h></coordinates><panel_attributes>Empleado
+--
+-dni:int
+-nombre:String
+-apellido.String
+-añoIngreso:int
+--
++Empleado(int,String,String,int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>260</y><w>210</w><h>130</h></coordinates><panel_attributes>Comision
+--
+_-SALARIO_MINIMO:double = 20.000_
+-clientesCaptados:int
+-montoCobrarPorCliente:double
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>260</y><w>190</w><h>220</h></coordinates><panel_attributes>SalarioFijo
+--
+_AÑOS_BASICO:int = 2_
+_AÑOS_SEGUNDO:int = 5_
+_AÑOS_TERCER:int = 6_
+_AÑOS_CUARTO:int = 10_
+_PRIMER_PORC:int = 5_
+_SEGUNDO_PORC:int= 10_
+_TERCER_PORC:int = 15_
+-sueldoBasico:double
+-pocentajeAdicional:double
+-añosEnLaEmpresa:int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>160</y><w>210</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;190;50;190;100</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>160</y><w>190</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>170;10;170;50;10;50;10;100</additional_attributes></element></diagram>

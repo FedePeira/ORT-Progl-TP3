@@ -1,0 +1,24 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>380</x><y>50</y><w>280</w><h>130</h></coordinates><panel_attributes>Taller
+--
+_-LIMITE_KILOMETROS:int = 2000_
+_-LIMITE_WATTS:int = 250_
+--
++Taller()
++cantServiciosPosibles(ArrayList&lt;Bicicleta&gt;):int
++cantServiciosPosiblesC(ArrayList&lt;Bicicleta&gt;):int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>250</y><w>180</w><h>130</h></coordinates><panel_attributes>/Bicicleta/
+--
+-marca:String
+-modelo:String
+-cantKilometros:int
+--
++Bicicleta()
+/+revisarRequisitos(int):boolean/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>460</y><w>180</w><h>130</h></coordinates><panel_attributes>BicicletaElectrica
+--
+-potencia:int
+--
++revisarRequisitos(int):boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>370</y><w>150</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>170</y><w>50</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>460</y><w>180</w><h>130</h></coordinates><panel_attributes>BicicletaNormal
+--
+
+--
++revisarRequisitos(int):boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>370</y><w>160</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;140;90</additional_attributes></element></diagram>
